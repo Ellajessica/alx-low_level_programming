@@ -1,17 +1,11 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- * _isdigit - function that checks for a digit (0 through 9).
- * @c: input value to check.
- * Return: int.
+ * _isdigit - prints the code
+ * @c: int to be checked
+ * Return: successful digit is 1 is 0 otherwise
  */
-
 int _isdigit(int c)
 {
-	if (c >= 48 && c <= 57)
-	{
-		return (1);
-	}
-	else
-		return (0);
+	return (c >= '0' && c <= '9');
 }
